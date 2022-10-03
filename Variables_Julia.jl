@@ -1,7 +1,5 @@
 include("./Encabezados.jl")
 
-
-
 create_title("Arreglos","#" )
 
 
@@ -22,22 +20,3 @@ println("El arreglo inverso es:",ar[end:-1:begin])
 println("El tipo de datos del arreglo es:", typeof(ar))
 pertenece_val(8)
 pertenece_val(25)
-
-
-
-
-
-function fizzbuzz(xs=1:10, fizz="Fizz", buzz="Buzz")
-    for i in xs
-        if i % 15 == 0
-            println(fizz, buzz)
-        elseif i % 3 == 0
-            println(fizz)
-        elseif i % 5 == 0
-            println(buzz)
-        else
-            println(i)
-        end
-    end
-end
-	
